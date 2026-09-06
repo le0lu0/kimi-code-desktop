@@ -1,0 +1,81 @@
+{
+  "name": "kimi-code",
+  "productName": "Kimi Code",
+  "version": "0.1.0",
+  "description": "Desktop shell that runs `kimi web` and embeds the Kimi Code web UI",
+  "main": "main.js",
+  "license": "MIT",
+  "author": "le0lu0",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "dist:dir": "electron-builder --dir",
+    "dist:all": "electron-builder -mwl"
+  },
+  "build": {
+    "appId": "com.kimicode.desktop",
+    "productName": "Kimi Code",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "package.json",
+      "assets/**"
+    ],
+    "mac": {
+      "icon": "build/icon.icns",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": "universal"
+        },
+        {
+          "target": "zip",
+          "arch": "universal"
+        }
+      ],
+      "identity": null
+    },
+    "win": {
+      "icon": "assets/icon-1024.png",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ]
+    },
+    "linux": {
+      "icon": "assets/icon-1024.png",
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ],
+      "category": "Development"
+    },
+    "dmg": {
+      "title": "Kimi Code"
+    }
+  },
+  "devDependencies": {
+    "electron": "^44.2.0",
+    "electron-builder": "^26.15.3"
+  }
+}

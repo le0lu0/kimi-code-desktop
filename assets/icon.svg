@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e293b"/>
+      <stop offset="0.55" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#2563eb" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect x="64" y="64" width="896" height="896" rx="216" fill="url(#bg)"/>
+  <rect x="64" y="64" width="896" height="896" rx="216" fill="none" stroke="url(#stroke)" stroke-width="14"/>
+  <circle cx="700" cy="324" r="52" fill="#38bdf8"/>
+  <text x="470" y="700" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif"
+        font-size="560" font-weight="800" fill="#f8fafc" text-anchor="middle">K</text>
+</svg>

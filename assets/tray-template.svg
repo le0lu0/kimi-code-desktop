@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <mask id="knockout">
+      <rect width="64" height="64" fill="white"/>
+      <text x="32" y="40" font-family="-apple-system, 'Helvetica Neue', sans-serif"
+            font-size="22" font-weight="800" fill="black" text-anchor="middle">K</text>
+    </mask>
+  </defs>
+  <rect x="16" y="16" width="32" height="32" rx="8" fill="#000000" mask="url(#knockout)"/>
+</svg>
